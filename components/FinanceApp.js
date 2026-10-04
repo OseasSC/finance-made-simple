@@ -255,7 +255,6 @@ export default function FinanceApp() {
           <input
             type="file"
             accept="image/*"
-            capture="environment"
             multiple
             onChange={handleFiles}
             disabled={loading}
@@ -263,7 +262,7 @@ export default function FinanceApp() {
           <span>
             {loading
               ? "Analisando com IA…"
-              : "Toque para câmera ou escolher imagens"}
+              : "Escolher da galeria ou tirar foto"}
           </span>
         </label>
         {error && <p className="error">{error}</p>}
